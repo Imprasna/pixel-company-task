@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixel</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="">'
+    <!-- Navbar -->
+    <nav class="navbar fixed-top navbar-expand-lg bg-transparent">
+        <div class="top-nav container" id="navbar">
+            <!-- Logo -->
+          <a class="navbar-brand fs-4" href="#"><img src="/assets/Group.svg" alt="logo"></a>
+          <!-- Toggle Button -->
+          <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- Sidebar -->
+          <div class="sidebar offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <!-- Sidebar Header -->
+            <div class="offcanvas-header text-white">
+              <a class="navbar-brand fs-4" href="#"><img src="/assets/Group.svg" alt="logo"></a>
+              <!-- <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img src="/assets/Group.svg" alt="logo"></h5> -->
+              <button type="button" class="btn-close btn-close-white shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <!-- Sidebar body -->
+            <div class="offcanvas-body d-flex flex-column flex-lg-row p-4 p-lg-0">
+              <ul class="navbar-nav justify-content-center fs-5 flex-grow-1 pe-3">
+                <li class="nav-item mx-2">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item mx-2">
+                  <a class="nav-link" href="#">Industries</a>
+                </li>
+                <li class="nav-item mx-2">
+                  <a class="nav-link" href="#">Services</a>
+                </li>
+                <li class="nav-item mx-2">
+                  <a class="nav-link" href="#">Consulting</a>
+                </li>
+                <li class="nav-item mx-2">
+                  <a class="nav-link" href="#">Insights</a>
+                </li>
+                <li class="nav-item mx-2">
+                  <a class="nav-link" href="#">About us</a>
+                </li>
+              </ul>
+              <!-- search -->
+              <div class="d-flex flex-column flex-lg-row justify-content-center align-items-center gap-3">
+                <input type="text" class="input-text">
+                <div class="icon-container">
+                  <span class="material-icons arrow-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="black" class="bi bi-x-circle" viewBox="0 0 16 16">
+                      <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                      <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                    </svg>
+                </span>
+                  <span class="material-icons search-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-search" viewBox="0 0 16 16">
+                      <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                    </svg>
+                </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+    <section class="header-section">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <!-- Slider -->
+          <div class="swiper-slide">
+            <div class="banner-image">
+              <img src="/assets/banner.png" alt="">
+              <div class="container">
+                <div class="banner-image-text">
+                  <p>Helping Organizations Improve their efficiency and performance.</p>
+                  <div class="right-arrow-block">
+                    <a href="#">Know more</a>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="right-arrow bi bi-arrow-right" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Slider -->
+          <div class="swiper-slide">
+            <div class="banner-image">
+              <img src="/assets/banner.png" alt="">
+              <div class="container">
+                <div class="banner-image-text">
+                  <p>Helping Organizations Improve their efficiency and performance.</p>
+                  <div class="right-arrow-block">
+                    <a href="#">Know more</a>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="right-arrow bi bi-arrow-right" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Slider -->
+          <div class="swiper-slide">
+            <div class="banner-image">
+              <img src="/assets/banner.png" alt="">
+              <div class="container">
+                <div class="banner-image-text">
+                  <p>Helping Organizations Improve their efficiency and performance.</p>
+                  <div class="right-arrow-block">
+                    <a href="#">Know more</a>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="right-arrow bi bi-arrow-right" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Slider -->
+          <div class="swiper-slide">
+            <div class="banner-image">
+              <img src="/assets/banner.png" alt="">
+              <div class="container">
+                <div class="banner-image-text">
+                  <p>Helping Organizations Improve their efficiency and performance.</p>
+                  <div class="right-arrow-block">
+                    <a href="#">Know more</a>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="right-arrow bi bi-arrow-right" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination position-left-bullets"></div>
+      </div>
+    </section>
+
+    <!-- Business List -->
+    <section class="second-section">
+      <div class="container">
+        <div class="row justify-content-md-center">
+          <div class="two-columns col col-lg-6 col-md-12 col-sm-12">
+            <div class="second-section-left">
+              <div class="second-section-left-image">
+                <img src="/assets/section-2.png" class="second-section-left-image-1" alt="second-section-image">
+                <img src="/assets/dots.png" class="second-section-left-image-2" alt="second-section-image">
+                <div class="second-section-left-text-block">
+                  <p>We will help your business grow</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="two-columns col col-lg-6 col-md-12 col-sm-12">
+            <div class="second-section-right">
+              <p class="second-section-right-heading">Tailored Consulting Services for Sustainable Growth & Success</p>
+              <p>With a team of experts and extensive experience, Pixel Studios helps various businesses, industries, start-ups, and businesses of all sizes with strategic consulting and result-driven solutions. </p>
+              <p class="second-section-right-heading-2">Industries We Serve:</p>
+              <div class="headings row">
+                <div class="heading-lists col-lg-6 col-md-12 col-sm-12">
+                  <p><span>01.</span>&nbsp; Consumer Goods</p>
+                  <p><span>03.</span>&nbsp; MSMEs & Start-ups</p>
+                  <p><span>05.</span>&nbsp; FMCG Companies</p>
+                  <p><span>07.</span>&nbsp; Education & Skill Development</p>
+                </div>
+                <div class="heading-lists col-lg-6 col-md-12 col-sm-12">
+                  <p><span>02.</span>&nbsp; Retail Market</p>
+                  <p><span>04.</span>&nbsp; Furniture Manufacturing </p>
+                  <p><span>06.</span>&nbsp; Fintech Firms</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Expert -->
+    <section class="third-section">
+      <div class="container">
+        <div class="third-section-heading">
+          <h1 class="text-center">Expert Consulting Services for Driving Businesses Forward</h1>
+        </div>
+      </div>
+        <div class="swiper mySwiper2">
+          <div class="swiper-wrapper">
+            <!-- Card Slider -->
+            <div class="swiper-slide">
+              <div class="car-card card text-bg-dark border border-0">
+                <img src="/assets/car1.png" class="card-img border-0" alt="carousel image">
+                <div class="card-img-overlay">
+                  <h5 class="card-heading card-title text-center">Sales & Marketing</h5>
+                  <div class="card-foot white-card-foot hover-know-more">
+                    <a class="" href="#">
+                        <img class="arrow" src="/assets/white-arrow.svg" alt="">
+                        <div class="circle-white"></div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Know more
+                    </a>
+                  </div>
+                  <!-- <a href="#" class="hover-know-more">Know more</a> -->
+                </div>
+              </div>
+            </div>
+            <!-- Card Slider -->
+            <div class="swiper-slide">
+              <div class="car-card card text-bg-dark border border-0">
+                <img src="/assets/car2.png" class="card-img border-0" alt="carousel image">
+                <div class="card-img-overlay">
+                  <h5 class="card-heading card-title text-center">Sales & Marketing</h5>
+                  <div class="card-foot white-card-foot hover-know-more">
+                    <a class="" href="#">
+                        <img class="arrow" src="/assets/white-arrow.svg" alt="">
+                        <div class="circle-white"></div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Know more
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Card Slider -->
+            <div class="swiper-slide">
+              <div class="car-card card text-bg-dark border border-0">
+                <img src="/assets/car3.png" class="card-img border-0" alt="carousel image">
+                <div class="card-img-overlay">
+                  <h5 class="card-heading card-title text-center">Sales & Marketing</h5>
+                  <div class="card-foot white-card-foot hover-know-more">
+                    <a class="" href="#">
+                        <img class="arrow" src="/assets/white-arrow.svg" alt="">
+                        <div class="circle-white"></div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Know more
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Card Slider -->
+            <div class="swiper-slide">
+              <div class="car-card card text-bg-dark border border-0">
+                <img src="/assets/car4.png" class="card-img border-0" alt="carousel image">
+                <div class="card-img-overlay">
+                  <h5 class="card-heading card-title text-center">Sales & Marketing</h5>
+                  <div class="card-foot white-card-foot hover-know-more">
+                    <a class="" href="#">
+                        <img class="arrow" src="/assets/white-arrow.svg" alt="">
+                        <div class="circle-white"></div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Know more
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Card Slider -->
+            <div class="swiper-slide">
+              <div class="car-card card text-bg-dark border border-0">
+                <img src="/assets/car1.png" class="card-img border-0" alt="carousel image">
+                <div class="card-img-overlay">
+                  <h5 class="card-heading card-title text-center">Sales & Marketing</h5>
+                  <div class="card-foot white-card-foot hover-know-more">
+                    <a class="" href="#">
+                        <img class="arrow" src="/assets/white-arrow.svg" alt="">
+                        <div class="circle-white"></div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Know more
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Card Slider -->
+            <div class="swiper-slide">
+              <div class="car-card card text-bg-dark border border-0">
+                <img src="/assets/car2.png" class="card-img border-0" alt="carousel image">
+                <div class="card-img-overlay">
+                  <h5 class="card-heading card-title text-center">Sales & Marketing</h5>
+                  <div class="card-foot white-card-foot hover-know-more">
+                    <a class="" href="#">
+                        <img class="arrow" src="/assets/white-arrow.svg" alt="">
+                        <div class="circle-white"></div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Know more
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Card Slider -->
+            <div class="swiper-slide">
+              <div class="car-card card text-bg-dark border border-0">
+                <img src="/assets/car3.png" class="card-img border-0" alt="carousel image">
+                <div class="card-img-overlay">
+                  <h5 class="card-heading card-title text-center">Sales & Marketing</h5>
+                  <div class="card-foot white-card-foot hover-know-more">
+                    <a class="" href="#">
+                        <img class="arrow" src="/assets/white-arrow.svg" alt="">
+                        <div class="circle-white"></div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Know more
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Card Slider -->
+            <div class="swiper-slide">
+              <div class="car-card card text-bg-dark border border-0">
+                <img src="/assets/car4.png" class="card-img border-0" alt="carousel image">
+                <div class="card-img-overlay">
+                  <h5 class="card-heading card-title text-center">Sales & Marketing</h5>
+                  <div class="card-foot white-card-foot hover-know-more">
+                    <a class="" href="#">
+                        <img class="arrow" src="/assets/white-arrow.svg" alt="">
+                        <div class="circle-white"></div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Know more
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+    </section>
+    
+    <!-- Insights -->
+    <section class="fifth-section">
+      <div class="container">
+        <div class="insightcards row">
+          <h1 class="insight-head p-0 text-center">Read Our Latest Insights</h1>
+          <div class="col col-lg-4 col-md-6 col-sm-12">
+            <div class="insight-card card text-left border-0 rounded-0">
+              <div class="card-header">
+                <small class="card-top-header text-body-secondary">Business Strategy <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#C72027" class="bi bi-dot" viewBox="0 0 16 16">
+                  <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
+                </svg> 06 Apr 2022</small>
+                <p class="card-title mb-0">Global Recession Watch: The Latest Data</h>
+              </div>
+              <div class="card-body p-0">
+                <img class="w-100" src="/assets/insight-1.png" alt="">
+              </div>
+              <div class="card-foot card-footer text-body-secondary">
+                <a href="#">
+                  <img class="arrow" src="/assets/arrow.svg" alt="">
+                  <div class="circle"></div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col col-lg-4 col-md-6 col-sm-12">
+            <div class="insight-card card text-left border-0 rounded-0">
+              <div class="card-header">
+                <small class="card-top-header text-body-secondary">Business Strategy . 06 Apr 2022</small>
+                <p class="card-title mb-0">Management Tools & Trends 2023</h>
+              </div>
+              <div class="card-body p-0">
+                <img class="w-100" src="/assets/insight-2.png" alt="">
+              </div>
+              <div class="card-foot card-footer text-body-secondary">
+                <a href="#">
+                  <img class="arrow" src="/assets/arrow.svg" alt="">
+                  <div class="circle"></div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col col-lg-4 col-md-6 col-sm-12">
+            <div class="insight-card card text-left border-0 rounded-0">
+              <div class="card-header">
+                <small class="card-top-header text-body-secondary">Retail . 06 Apr 2022</small>
+                <p class="card-title mb-0">How Engine 2 Expansion Can Power the Future of Retail</h>
+              </div>
+              <div class="card-body p-0">
+                <img class="w-100" src="/assets/insight-3.png" alt="">
+              </div>
+              <div class="card-foot card-footer text-body-secondary">
+                <a href="#">
+                  <img class="arrow" src="/assets/arrow.svg" alt="">
+                  <div class="circle"></div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="just-link">
+            <a href="#" class="all-insights text-center">View all Insights</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Future -->
+    <section class="sixth-section">
+      <div class="container-fluid">
+        <div class="news-block row">
+          <div class="col col-lg-6 col-md-12 col-sm-12 p-0">
+            <div class="news card text-bg-dark border-0">
+              <img src="/assets/news-1.png" class="card-img border-0" alt="...">
+              <div class="card-img-overlay border-0">
+                <div class="news-text">
+                  <div class="news-texts">
+                    <h5 class="card-title">Build Your Future With Us</h5>
+                    <p class="card-text">Join our team and bring a difference to the world of business consulting.</p>
+                  </div>
+                  <div class="card-foot white-card-foot">
+                    <a href="#">
+                        <img class="arrow" src="/assets/white-arrow.svg" alt="">
+                        <div class="circle-white"></div>&nbsp;&nbsp;&nbsp; Apply Now
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col col-lg-6 col-md-12 col-sm-12 p-0">
+            <div class="news card text-bg-dark border-0">
+              <img src="/assets/news-2.png" class="card-img border-0" alt="...">
+              <div class="card-img-overlay border-0">
+                <div class="news-text">
+                  <div class="news-texts">
+                    <h5 class="card-title">Want to Upscale Your Business?</h5>
+                    <p class="card-text">Send us a message and a member from our team will assist you.</p>
+                  </div>
+                  <div class="card-foot white-card-foot">
+                    <a href="#">
+                        <img class="arrow" src="/assets/white-arrow.svg" alt="">
+                        <div class="circle-white"></div>&nbsp;&nbsp;&nbsp; Get in touch
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <section class="footer-section">
+      <div class="container">
+        <div class="footer-row row">
+          <div class="foot footer-1 col col-lg-3 col-md-6 col-sm-12">
+            <a href="#"><img src="/assets/Group.svg" alt=""></a>
+            <a class="address" href="#"><img src="/assets/address.svg" alt="">&nbsp; 1833, 18th Main Road Anna Nagar West, Thiruvalluvar Colony, Anna Nagar, Chennai, Tamil Nadu 600040</a>
+            <a href="mailto:info@pixel-studios.com"><img src="/assets/email.svg" alt="">&nbsp; info@pixel-studios.com</a>
+            <a href="tel:++91 11111 22222"><img src="/assets/phone.svg" alt="">&nbsp; +91 11111 22222</a>
+            <div class="social-icons">
+              <a href="#"><img src="/assets/facebook.svg" alt=""></a>
+              <a href="#"><img src="/assets/x.svg" alt=""></a>
+              <a href="#"><img src="/assets/youtube.svg" alt=""></a>
+              <a href="#"><img src="/assets/linkedin.svg" alt=""></a>
+            </div>
+          </div>
+          <div class="foot col col-lg-3 col-md-6 col-sm-12">
+            <h3>Quick Links</h3>
+            <a href="#">Home</a>
+            <a href="#">About us</a>
+            <a href="#">Blogs</a>
+            <a href="#">Careers</a>
+            <a href="#">Contact us</a>
+            <a href="#">Privacy Policy</a>
+          </div>
+          <div class="foot col col-lg-3 col-md-6 col-sm-12">
+            <h3>Services</h3>
+            <a href="#">Sales & Marketing</a>
+            <a href="#">Branding</a>
+            <a href="#">Operations</a>
+            <a href="#">Digital Strategy & Communication </a>
+            <a href="#">B2B & B2C Market</a>
+            <a href="#">Business Growth</a>
+            <a href="#">Business Expansion</a>
+            <a href="#">HR Solutions</a>
+          </div>
+          <div class="foot col col-lg-3 col-md-6 col-sm-12">
+            <h3>Industries we Serve</h3>
+            <a href="#">Consumer Goods</a>
+            <a href="#">Retail Market</a>
+            <a href="#">MSMEs & Start-ups</a>
+            <a href="#">Furniture Manufacturing</a>
+            <a href="#">Education & Skill Development</a>
+            <a href="#">Fintech Firms</a>
+            <a href="#">FMCG</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Copyright -->
+    <section>
+      <div class="copyright">
+        <p class="text-center"> Copyright &copy; <script>document.write(new Date().getFullYear())</script> | All Rights Reserved. Designed by <a href="#">Pixel Studios</a></p>
+      </div>
+    </section>
+    
+
+    <script src="script.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        pagination: {
+          el: ".swiper-pagination",
+        },
+        centeredSlides: true,
+        autoplay: {
+          delay: 4500,
+          disableOnInteraction: false,
+        },
+      });
+
+      var swiper = new Swiper(".mySwiper2", {
+        // slidesPerView: 4,
+        spaceBetween: 0,
+        pagination: {
+          el: ".swiper-pagination",
+        },
+        centeredSlides: false,
+        autoplay: {
+          delay: 4500,
+          disableOnInteraction: false,
+        },
+        breakpoints: {
+          640: {
+            slidesPerView: 1,
+            spaceBetween: 0,
+          },
+          768: {
+            slidesPerView: 3,
+            spaceBetween: 0,
+          },
+          1024: {
+            slidesPerView: 4,
+            spaceBetween: 0,
+          },
+        },
+      });
+
+      window.onscroll = function() {myFunction()};
+
+      var navbar = document.getElementById("navbar");
+      var sticky = navbar.offsetTop;
+
+      function myFunction() {
+        if (window.pageYOffset >= sticky) {
+          navbar.classList.add("sticky")
+        } else {
+          navbar.classList.remove("sticky");
+        }
+      }
+
+      // search bar
+      const body = document.querySelector("body");
+      const container = document.querySelector(".container");
+      const inputText = document.querySelector(".input-text");
+      const searchIcon = document.querySelector(".search-icon");
+      const arrowIcon = document.querySelector(".arrow-icon");
+
+      container.addEventListener('click', e => {
+        e.stopPropagation();
+        inputText.classList.add('input--expand');
+        searchIcon.classList.add('search--expand');
+        inputText.focus();
+      });
+
+      body.addEventListener('click', e => {
+        inputText.value ='';
+        inputText.classList.remove('input--expand');
+        searchIcon.classList.remove('search--expand');
+        searchIcon.classList.remove('search--ontype');
+      })
+
+      inputText.addEventListener('input', e => {
+        if(inputText.value === '') {
+          searchIcon.classList.remove('search--ontype');
+        } else {
+          searchIcon.classList.add('search--ontype');
+        }
+      })
+
+    </script>
+</body>
+</html>
